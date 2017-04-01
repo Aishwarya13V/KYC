@@ -32,9 +32,29 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 
+	
+
+	<!--<script type = "text/js">
+		function validate()
+		{
+		 var acc = document.getElementById('acc').value;
+		 var pass = document.getElementById('pass').value;
+		 if(acc.length > 16)
+		 {
+			alert ("Account Number should be max of 16 digits");
+			return false;
+		 }
+		 if(pass.length < 6)
+		 {
+			alert ("password should contain min of 6 characters");
+			return false;
+		 }
+		}
+	</script>-->
 </head>
 
 <body id="page-top" class="index">
+
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -58,7 +78,7 @@
                         <a class="page-scroll" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">SignIn</a>
+                        <a class="page-scroll" href="#about">Sign In</a>
                     </li>
                     
                 </ul>
@@ -71,21 +91,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 ">
-                    <h2 class="section-heading">SignIn</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Sign In</h2>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row">
                 <div >
-                    <form name="sentMessage" id="contactForm" class="form1" novalidate>
+                    <form name="sentMessage" id="signinForm"  >
                         <div class="row">
 						   <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Account Number*" id="acc" required data-validation-required-message="Please enter Account Number.">
+                                    <input type="text" class="form-control" placeholder="Account Number*" id="acc" required >
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="Password *" id="pass" required data-validation-required-message="Please enter your password.">
+                                    <input type="password" class="form-control" placeholder="Password *" id="pass" required >
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 
@@ -93,9 +113,9 @@
                             <div class="clearfix"></div>
                             <div class="col-lg-12">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">SignIn</button>
+                                <button type="submit" class="btn btn-xl" onclick = "return validate()" > Sign In</button>
                             </div>
-							<a href="SignUp.html">To create an account Sign UP</a>
+							<a href="SignUp.html">To create an account Sign Up</a>
                         </div>
 						
                     </form>
@@ -107,17 +127,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                    <span class="copyright">Copyright &copy; KYC</span>
                 </div>
                 <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
+                    
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
